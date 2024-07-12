@@ -1,0 +1,10 @@
+INDEX(reference, [row], [column]) ---> Returns the content of a cell, specified by row and column offset.
+
+MATCH(search_key, range, [search_type]) 
+--range
+The one-dimensional array to be searched.
+
+--search_type == search method
+1 :- Find the index of the largest value <= search_key when range is sorted in ascending order
+0 :- Find the index of the exact value when range is unsorted
+-1 :- Find the index of the samllest value >= search _key when range is sorted in descending order
