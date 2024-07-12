@@ -1,6 +1,9 @@
 INDEX(reference, [row], [column]) ---> Returns the content of a cell, specified by row and column offset.
+--> content return karega
 
 MATCH(search_key, range, [search_type]) 
+--> index return karega
+
 --range
 The one-dimensional array to be searched.
 
@@ -8,3 +11,13 @@ The one-dimensional array to be searched.
 1 :- Find the index of the largest value <= search_key when range is sorted in ascending order
 0 :- Find the index of the exact value when range is unsorted
 -1 :- Find the index of the samllest value >= search _key when range is sorted in descending order
+
+VLOOKUP(search_key, range, index, [is_sorted]) --> Searches down the first column of a range for a key and returns the value of a specified cell in the row found.
+
+--search_key
+
+--range
+The range to consider for the search. The first column in the range is searched for the key specified in search_key.
+
+--index
+The column index of the value to be returned, where the first column in range is numbered 1.
